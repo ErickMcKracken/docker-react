@@ -3,7 +3,8 @@ services:
   - docker
 
 before_install:
-  - docker build -t ErickMcKracken/docker-react -f Dockerfile.dev .
+  - docker build -t erickmckracken/docker-react -f Dockerfile.dev .
+
 
 script:
-  - docker run ErickMcKracken/docker-react npm run test -- --coverage
+  - docker run erickmckracken/docker-react npm run test -- --coverage
